@@ -1,11 +1,12 @@
-import './App.css';
+import { Routes, Route } from 'react-router-dom';
+import Todo from './components/todo.jsx'; 
+import './App.css'; 
 
-import todo from "./components/todo.jsx"
 function App() {
   return (
-    <div >
+    <div>
       <Routes>
-        <Routes path='/' element={todo}></Routes>
+        <Route path='/' element={<Todo />} /> {}
       </Routes>
     </div>
   );
